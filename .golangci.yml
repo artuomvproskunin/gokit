@@ -1,0 +1,26 @@
+version: "2"
+
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - ineffassign
+    - unused
+    - gofumpt
+    - revive
+
+linters-settings:
+  revive:
+    rules:
+      - name: exported
+      - name: var-naming
+      - name: error-return
+      - name: error-strings
+      - name: increment-decrement
+      - name: indent-error-flow
+      - name: range
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
